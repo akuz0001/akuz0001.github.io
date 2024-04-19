@@ -1,9 +1,386 @@
-body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family:"Open Sans", sans-serif;
+    max-width:1200px ;
+    margin: auto;
+
 }
 
-.wrapper {
-    background-color: black;
-    color: darkorange;
+h1{
+    font-size: 55px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    box-sizing: border-box;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+
+
+}
+
+.banner a{
+    background-color: #c78c06;
+    color:#222;
+}
+
+.vision a{
+    background-color: rgba(2, 2, 2, 0.6);
+    color: white;
+    border: 0.5px solid #c78c06;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    padding-bottom: 20px;
+
+}
+
+.logo{
+    background-color: #c78c06;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #c78c06;
+}
+
+nav a:hover{
+    background-color: #c78c06;
+    color: #222;
+}
+
+nav form{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+nav input[type="text"]{
+    padding: 5px;
+    width: 88%;
+    margin-right: 0;
+}
+
+nav button{
+    background: none;
+    border: 1px solid #c78c06;
+    padding: 5px;
+    color: #c78c06;
+    cursor: pointer;
+    width: 31px;
+}
+
+.banner{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../images/main-banner.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.welcome{
+    color: white;
+    background-color: rgba(2, 2, 2, 0.5);
+    height: 75%;
+    align-content: center;
+}
+
+.about-us{
+    width: 100%;
+    background-color: #ffe6ac ;
+}
+
+.about-us img{
+    padding: 10px;
+    width: calc(100% - 20px);
+
+}
+
+.services{
+    width: 100%;
+}
+
+.digital,.marketing,.video,.web-dev,.print{
+    background-color: #ffe6ac;
+    width: calc(100% - 20px);
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.digital img,.marketing img,.video img,.web-dev img,.print img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.vision{
+    color: white;
+    align-content: center;
+    background-image: url(../images/vision.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
+}
+
+.john, .bob{
+    width: calc(100% - 20px);
+    background-color: #ffe6ac;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.john img, .bob img{
+    width: 100%;
+}
+
+hr{
+    border: 1px solid;
+    color: #c78c06;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
+.contact-us{
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
+.contact-us form{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact-us form button{
+   color: #c78c06; 
+   background-color: #222;
+}
+.contact-us input{
+    width: 100%;
+}
+
+#message{
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+}
+
+table,th,td{
+    border: 1px solid #222;
+    border-collapse: collapse;
+    height: 40px;
+    justify-content: left;
+    align-content: center;
+}
+
+td{
+    padding-left: 10px;
+}
+
+thead{
+    background-color: #ffe6ac;
+}
+
+.location{
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    margin: auto;
+}
+
+.contact-us h2, .contact-us h3{
+    margin-left: 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #222;
+    color: #c78c06;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: center;
+}
+
+
+@media screen and (min-width: 760px) {
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav{
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .welcome{
+        color: white;
+        background-color: rgba(2, 2, 2, 0.5);
+        width: 90%;
+        height: 75%;
+        align-content: center;
+        margin: auto;
+    }
+
+    .about-us{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .about-us img{
+        width: 480px;
+    }
+
+    .about-us div{
+        width: 400px;
+    }
+
+    .digital{grid-area: dt;}
+    .marketing{grid-area: mk;}
+    .video{grid-area: vp;}
+    .web-dev{grid-area: wd;}
+    .print{grid-area: pt;}
+    .services h2{grid-area: os;}
+
+    .services{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: "os os . . . ."
+                             "dt dt dt mk mk mk"
+                             "vp vp wd wd pt pt";
+    }
+
+    .our-team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .john{
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .john img{
+        width: 50%;
+    }
+
+    .bob img{
+        width: 50%;
+    }
+
+    .bob{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact-us h2{grid-area: cu;}
+    .contact-us form{grid-area: sm;}
+    .location{grid-area: lt;}
+    .hours{grid-area: ho;}
+
+    .contact-us{
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-areas: "cu cu . ."
+                             "sm sm lt lt"
+                             ". . lt lt"
+                             "ho ho ho ho";
+         
+    }
+
+    .contact-us form{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    
+
+    .contact-us form{
+        align-content: top;
+    }
+
+
+
+    
+
+    
 }
